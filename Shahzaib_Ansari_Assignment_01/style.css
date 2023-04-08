@@ -1,0 +1,33 @@
+#container {
+  max-width: 70%;
+  margin: auto;
+}
+
+.section1,
+.section2,
+.section3 {
+  display: flex;
+  flex-direction: row;
+}
+
+img {
+  border-radius: 100px;
+  height: 150px;
+  width: 150px;
+  padding-right: 1rem;
+  text-align: right;
+}
+
+.section1 > div:nth-child(1),
+.section1 > div:nth-child(2),
+.section2 > div:nth-child(1),
+.section2 > div:nth-child(2),
+.section3 > div:nth-child(1),
+.section3 > div:nth-child(2) {
+  flex: 1;
+}
+
+.section3 div:nth-child(2) div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+}
